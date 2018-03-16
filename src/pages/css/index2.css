@@ -1,0 +1,213 @@
+body,p{
+    margin: 0;
+    padding: 0;
+    font-family: "楷体";
+}
+.NONE{
+    font-size: 50px;
+    color: rgba(235,101,27,.5);
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding-left: 10px;
+    overflow: hidden;
+}
+ul li{
+    float: left;
+    padding: 10px;
+    margin: 10px 5px 0 5px;
+    border: 3px solid #87ceeb;
+    font-size: 20px;
+}
+ul li:hover{
+    cursor: pointer;
+}
+.list-none:hover{
+    color: white;
+}
+.list-active{
+    border-bottom-color: white;
+    border-radius: 5px 5px 0 0;
+}
+.list-none{
+    background-color: skyblue;
+    border-radius: 5px 5px 0 0;
+}
+#canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #ffffff;
+    z-index: -3;
+}
+#head{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+#body{
+    top:56px;
+    width: 96%;
+    border: 3px solid skyblue;
+    border-radius: 5px;
+    margin-left: 10px;
+    position: absolute;
+    z-index: -2;
+}
+.pContent{
+    margin: 10px 0 0 0 ;
+    font-size:17px ;
+}
+.pContent:last-child{
+    padding: 0;
+}
+.pContent .cpassword{
+    width: 70px;
+    height: 39px;
+    font-family: 方正姚体;
+}
+#changepassword p .close,.rentContent ul li:hover,.rentHead ul li:hover,.pContent:hover,.historyHead ul li:hover,.historyContent ul li:hover,.newContent ul li:hover,.announceContent ul li:hover,.collectionContent ul li:hover,.collectionHead ul li:hover{
+    cursor: default;
+}
+.rentHead ul,.historyHead ul,.collectionHead{
+    margin-top: 10px;
+}
+.rentContent ul li,.rentHead ul li{
+    width: 70px;
+    height: 18px;
+    margin: auto 0;
+    padding:3px;
+    font-size: 16px;
+    overflow: hidden;
+    border-width: 1px;
+}
+.rentHead ul li:nth-child(1),.rentContent ul li:nth-child(1){
+    width: 165px;
+}
+.rentHead ul li:nth-child(2),.rentContent ul li:nth-child(2){
+    width: 165px;
+}
+.rentHead ul li:nth-child(5),.rentContent ul li:nth-child(5){
+    text-align: center;
+}
+#info,#Rank,#history,#news,#collection{
+    height: 100%;
+    overflow:auto;
+    display: none;
+}
+.click-none{
+    width: 50px;
+    height: 20px;
+    font-family: "楷体";
+    background-color: black;
+    border-color: black;
+    opacity: .1;
+    color: white;
+}
+.click-active{
+    width: 50px;
+    height: 20px;
+    font-family: "楷体";
+    background-color: skyblue;
+    border-color: skyblue;
+    opacity: .8;
+}
+.historyHead ul li,.historyContent ul li{
+    width: 100px;
+    height: 18px;
+    margin: auto 0;
+    padding:3px;
+    font-size: 16px;
+    overflow: hidden;
+    border-width: 1px;
+}
+.historyHead ul li:nth-child(1),.historyContent ul li:nth-child(1)
+{
+    width: 360px;
+}
+#new,#announce{
+    width: 50%;
+    height: 100%;
+    float: left;
+    overflow: auto;
+}
+#changepassword{
+    width: 300px;
+    height: 170px;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    background-color: rgba(0,0,0,.1);
+    display: none;
+}
+#changepassword p{
+    margin-right: 30px;
+    line-height: 32px;
+}
+.cpassword{
+    width: 60px;
+    height: 30px;
+}
+#change{
+    z-index: 1;
+    background-color: rgba(0,0,0,.2);
+    display: none;
+    position: relative;
+}
+.newContent ul li,.announceContent ul li{
+    overflow: hidden;
+    height: 25px;
+}
+.newContent ul li:nth-child(1),.announceContent ul li:nth-child(1){
+    margin: 0;
+    padding: 0;
+    width: 70%;
+ }
+.newContent ul li:nth-child(2),.announceContent ul li:nth-child(2){
+    margin: 0;
+    padding: 0;
+    width: 160px;
+}
+.newhead,.announcehead{
+    font-size: 200%;
+}
+.collectionHead ul li,.collectionContent ul li{
+    width: 200px;
+    height: 18px;
+    margin: auto 0;
+    padding:3px;
+    font-size: 16px;
+    overflow: hidden;
+    border-width: 1px;
+}
+.collectionHead ul li:nth-child(3),.collectionHead ul li:nth-child(4),.collectionContent ul li:nth-child(3),.collectionContent ul li:nth-child(4){
+    width: 90px;
+}
+.rank-content {
+    margin-top: 5px;
+    border: 2px solid rgba(135, 206, 235, 0.5);
+    height: 49px;
+}
+.rank-content p{
+    margin: 3px 0;
+}
+.rank-content span{
+    margin-left:10px;
+}
+@media (min-width:0px) and (max-width:1250px) {
+
+    .newContent ul li:nth-child(1),.announceContent ul li:nth-child(1){
+        margin: 0;
+        padding: 0;
+        width: 41%;
+    }
+    .newContent ul li:nth-child(2),.announceContent ul li:nth-child(2){
+        margin: 0;
+        padding: 0;
+        width: 160px;
+    }
+}

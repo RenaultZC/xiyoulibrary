@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>西邮图书馆</title>
+    <script src="build/index2.js"></script>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <div id="head">
+        <ul>
+            <li class="list-active">用户信息</li>
+            <li class="list-none">借阅排行</li>
+            <li class="list-none">借阅历史</li>
+            <li class="list-none">新闻公告</li>
+            <li class="list-none">图书收藏</li>
+        </ul>
+    </div>
+    <div id="body">
+        <div id="info" class="content">
+        </div>
+        <div id="Rank" class="content"></div>
+        <div id="history" class="content"></div>
+        <div id="news" class="content">
+            <div id="new">
+                <p class="newhead" align="center">新闻</p>
+            </div>
+            <div id="announce">
+                <p class="announcehead" align="center">公告</p>
+            </div>
+        </div>
+        <div id="collection" class="content"></div>
+    </div>
+    <div id="change">
+        <div id="changepassword">
+            <p align="right"><span class="close">×</span></p>
+            <p align="right" id="id"></p>
+            <p align="right"><span>原始密码:</span><input type="password" class="password"></p>
+            <p align="right"><span>新密码:</span><input type="password" class="password"></p>
+            <p align="right"><span>确认新密码:</span><input type="password" class="password"></p>
+            <p align="center"><button class="cpassword">确认</button></p>
+        </div>
+    </div>
+</body>
+</html>
